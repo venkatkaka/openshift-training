@@ -73,7 +73,7 @@ Resources:
   OpenshiftMasterSecurityGroup:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
-      VpcId: vpc-f044368a
+      VpcId: vpc-28cd2e43
       GroupDescription: Openshift Security Group for Master node
       Tags:
       - Key:  kubernetes.io/cluster/openshift
@@ -98,7 +98,7 @@ Resources:
   OpenshiftSSHSecurityGroup:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
-      VpcId: vpc-f044368a
+      VpcId: vpc-28cd2e43
       GroupDescription: Openshift Security Group for Internal SSH
       Tags:
       - Key:  kubernetes.io/cluster/openshift
@@ -111,7 +111,7 @@ Resources:
   OpenshiftInternalSecurityGroup:
     Type: 'AWS::EC2::SecurityGroup'
     Properties:
-      VpcId: vpc-f044368a
+      VpcId: vpc-28cd2e43
       GroupDescription: Openshift Security Group for Internal nodes
   Internal53TCPIngress:
     Type: 'AWS::EC2::SecurityGroupIngress'
